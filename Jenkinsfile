@@ -4,7 +4,7 @@ pipeline {
     stage('Check Source Code') {
       steps {
         sh '''#!/bin/bash
-echo ../../bin/shiftleft.cli '''
+../../bin/shiftleft.cli  -t 36000 code-scan  -s .  -nb'''
       }
     }
 
